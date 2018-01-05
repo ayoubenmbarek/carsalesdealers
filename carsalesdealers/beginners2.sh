@@ -1,0 +1,5 @@
+clear
+read -p "Please enter your name  : " name
+read -p "Please enter your age  : " age
+read -p "Please enter your sex. Male/Female  : " sex
+echo "So you're a $age year old $sex called $name"

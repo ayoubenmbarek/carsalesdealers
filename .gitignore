@@ -1,0 +1,7 @@
+carsalesdealers/*.csv                                                                                                                                                    
+carsalesdealers/*.log                                                                                                                                                    
+.scrapy                                                                                                                                                              
+carsalesdealers/node_modules                                                                                                                                             
+*.log
+*.csv
+carsalesdealers/*.CSV*

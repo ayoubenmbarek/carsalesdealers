@@ -1,0 +1,3 @@
+Le code est bien structuré, comme il a essayé d'enregistrer les resultats dans fichier excel, sauf que il n'a pas fait un effort pour extraire les données souhaités du site demandé, il a juste fait du copier coller d'un crawling d'un autre site meme en laissant les données à extraire de l'autre site et non pas du site demandé.
+
+je le note 2/10.
