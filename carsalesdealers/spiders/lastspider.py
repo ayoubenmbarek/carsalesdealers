@@ -16,8 +16,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 class CarsalesDealersSpider(scrapy.Spider):
-        name = "lastspider2-05-01-18" #carsalesdealersperdepartment0410 contain cache of the most listing page
-        #handle_httpstatus_list = [302, 301]#, 500]#, 403] #commented 04-01-18
+        name = "lastspider2-05-02-18" ####lastspider2-08-01-18#####carsalesdealersperdepartment0410 contain cache of the most listing page
+        handle_httpstatus_list = [302, 301]#, 500]#, 403] #commented 04-01-18
         allowed_domains = ['carsales.com.au']
 	    #sudo docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash
         start_urls = ['https://www.carsales.com.au/dealer-services/dealers?sb=featured'] 
@@ -93,7 +93,7 @@ class CarsalesDealersSpider(scrapy.Spider):
                        # if next:
                                # next_page = response.urljoin(next)
                                # yield scrapy.Request(next_page, headers=headers, callback=self.parse)
-                for i in range(1,513):#504 all pages so 505 is the last 06-11
+                for i in range(1,516):#504 all pages so 505 is the last 06-11
                         next = 'https://www.carsales.com.au/dealer-services/dealers?s='+str(i*15)+'&sb=featured'
                         #next = 'https://www.carsales.com.au/dealer-services/dealers?s='+str(i*15)+'&q=(And.Market.Car._.Status.1._.Department.Service+Department.)&sb=dealername'
                         #next = 'https://www.carsales.com.au/dealer-services/dealers?s='+str(i*15)+'&q=(And.Market.Car._.Status.1._.Department.Showroom.)&sb=dealername'
